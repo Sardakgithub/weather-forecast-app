@@ -1,0 +1,19 @@
+:root{ color-scheme: light dark; font-synthesis-weight: none; }
+*{ box-sizing: border-box; }
+body{ margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background:#0f172a; color:#e2e8f0; }
+.container{ max-width: 880px; margin: 32px auto; padding: 0 16px; }
+
+h1{ margin:0 0 16px; font-size: 28px; }
+
+.search{ display:flex; gap:8px; margin-bottom:16px; }
+.search input{ flex:1; padding:10px 12px; border-radius:8px; border:1px solid #334155; background:#0b1224; color:#e2e8f0; }
+.search button{ padding:10px 14px; border-radius:8px; border:1px solid #334155; background:#1e293b; color:#e2e8f0; cursor:pointer; }
+.search button[disabled]{ opacity:0.6; cursor:not-allowed; }
+
+.error{ background:#7f1d1d; color:#fecaca; padding:10px 12px; border-radius:8px; margin-bottom:16px; }
+
+.card{ background:#0b1224; border:1px solid #334155; border-radius:12px; padding:16px; margin-bottom:16px; }
+.card-header{ display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.grid{ display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:8px; margin-top:8px; }
+
+.forecast{ display:grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap:12px; }
